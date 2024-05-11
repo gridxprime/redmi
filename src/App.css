@@ -1,0 +1,126 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.change__color{
+  position: absolute;
+  top: 2%;
+  left: 30%;
+  display: flex;
+  gap: 2vw;
+}
+
+.change__color button{
+    color: #000;
+    background: none;
+    border: none;
+    padding: 1vh 1vh;
+    width: 5vw;
+    filter: drop-shadow(#000 5px 5px 3px);
+    border-radius: 1rem;
+}
+
+.change__color button:active{
+  transform: scale(.9);
+}
+
+.change__color button:nth-child(1){
+  background: red;
+}
+.change__color button:nth-child(2){
+  background: lime; }
+
+.change__color button:nth-child(3){
+  background: blue;
+}
+
+
+.phone{
+  min-height: 80vh;
+  min-width: 22vw;
+  background: blue;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  padding: 2vh 2vh 7vh;
+  position: relative;
+  transition: .3s linear all;
+  filter: drop-shadow(#000 5px 5px 10px);
+  box-shadow: inset #000 2px 2px 5px ,
+              inset #000 -2px -2px 5px;
+}
+
+.phone__top-line{
+
+
+  position: absolute;
+  top: 2vh;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 1vh 1vh 0vh;
+  z-index: 50;
+
+
+}
+
+.phone__top-line-camera{
+  height: 2.5vh;
+  width: 1.5vw;
+  background: #3f3f3f;
+  position: absolute;
+  top: 1.28vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.phone__top-line-camera-round{
+  background: #000;
+  width: 50%;
+  height: 50%;
+  border-radius: 50px;
+}
+
+.phone__inner{
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+
+  background: #3f3f3f;
+  border-radius: 15px;
+  background: url('/src/img/wallpaper.webp');
+  background-size: cover;
+  box-shadow: inset #000 5px 5px 10px,
+              inset #000 -5px -5px 10px;
+
+}
+
+.phone__bottom-name{
+  position: absolute;
+  bottom: 3%;
+  color: #fff;
+  filter: drop-shadow(#000 2px 2px 1px);
+}
+
+
+.phone__home-btn{
+  position: absolute;
+  bottom: 1vh;
+  border-radius: 50%;
+  outline: 1px solid #fff;
+  padding: 5px;
+}
+
+
+.phone__home-btn div{
+  width: 1vh;
+  height: 1vh;
+  background: #fff;
+  border-radius: 50%;
+}
